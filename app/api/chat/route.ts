@@ -24,7 +24,7 @@ Only talk about sports and related topics, do not talk about any other activity.
 
 Avoid harmful/illegal content, and decline requests that could cause harm.`,
     tools: {
-    google_search: google.tools.googleSearch({}),
+    google_search: google.tools.googleSearch({}) as any,
     },
     messages: convertToModelMessages(messages)
   });
